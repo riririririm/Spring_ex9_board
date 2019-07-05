@@ -31,5 +31,21 @@
 #####	   -- 다른 junit test case 생성해서 상속받아서 사용
 
 ## 4) XML 파일 설정
+####	a> server-context.xml
+####	b> root-context.xml
+#####	   -- mybatis
+#####		1) connection -properties파일 사용 : DriverManagerDataSource
+#####		2) connection, xml			: SqlSessionFactoryBean
+#####		3) 최종 Mapping					: SqlSessionTemplate
 
- 
+#####	   -- fileUpload
+#####			CommonsMultipartResolver
+			
+#####	   -- properties파일 위치 설정
+#####			PropertyPlaceholderConfigurer
+			
+## 5) Mybatis 설정
+####	- file들의 위치
+#####		src/main/resources 하위에 mybatis 디렉토리 생성
+#####		  config  : mybatis 설정파일들
+#####		  mappers : mybatis sql 파일들
